@@ -592,5 +592,10 @@ namespace QLTK
         {
             btnXoaTK_Click(sender, e);
         }
+
+        private void bàngLãiSuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bảngLãiSuấtToolStripMenuItem_Click(sender, e);
+        }
     }
 }
