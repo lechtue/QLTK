@@ -16,8 +16,10 @@ namespace QLTK
     {
         private QLKhachHang qlkh;
         private QLTaiKhoan qltk;
-        public frmQLTK()
+        private string user;
+        public frmQLTK(string user)
         {
+            this.user = user;
             InitializeComponent();
         }
         public void GetLoaiTK()
@@ -364,6 +366,7 @@ namespace QLTK
             LoadDSKH();
             MacDinh();
             toolStripStatusLabel2.Text = "Có " + lvTK.Items.Count.ToString() + " tài khoản";
+            this.Text = "Xin chào: " + user;
         }
 
         private void bảngLãiSuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -596,6 +599,12 @@ namespace QLTK
         private void bàngLãiSuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             bảngLãiSuấtToolStripMenuItem_Click(sender, e);
+        }
+
+        private void logToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLog frm = new frmLog();
+            frm.ShowDialog();
         }
     }
 }

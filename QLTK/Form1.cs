@@ -40,14 +40,26 @@ namespace QLTK
             read.Close();
             conection.Close();
         }
+        public void GhiLog(string user)
+        {
+            string sql = @"server=DESKTOP-3PAL4OL\SQL; database=QLTK ; Integrated Security=true;";
+            SqlConnection conection = new SqlConnection(sql);
+            SqlCommand cmd = conection.CreateCommand();
+            conection.Open();
+            cmd.CommandText = "insert into DangNhap values('" + user + "',GETDATE())";
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            conection.Close();
+        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
             for(int i= 0;i<qladmin.DanhSach.Count();i++)
-            if (txtUser.Text == qladmin.DanhSach[i].User.ToString())
+            if (txtUser.Text == qladmin.DanhSach[i].User)
             {
-                    if (txtPassword.Text == qladmin.DanhSach[i].Password.ToString())
+                    if (txtPassword.Text == qladmin.DanhSach[i].Password)
                     {
-                        frmQLTK frm = new frmQLTK();
+                        GhiLog(qladmin.DanhSach[i].User);
+                        frmQLTK frm = new frmQLTK(qladmin.DanhSach[i].User);
                         frm.ShowDialog();
                         this.Close();
                     }

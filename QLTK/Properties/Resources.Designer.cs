@@ -83,9 +83,39 @@ namespace QLTK.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap change_32px {
+            get {
+                object obj = ResourceManager.GetObject("change_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete_32px {
             get {
                 object obj = ResourceManager.GetObject("delete_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap details_32px {
+            get {
+                object obj = ResourceManager.GetObject("details_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap details_32px1 {
+            get {
+                object obj = ResourceManager.GetObject("details_32px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
