@@ -243,5 +243,10 @@ namespace QLTK
             LoadLV();
             frm.GetLoaiTK();
         }
+
+        private void lvLoaiTK_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            this.lvLoaiTK.ListViewItemSorter = new ListViewItemComparer(e.Column);
+        }
     }
 }

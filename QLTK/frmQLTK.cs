@@ -16,10 +16,10 @@ namespace QLTK
     {
         private QLKhachHang qlkh;
         private QLTaiKhoan qltk;
-        private string user;
-        public frmQLTK(string user)
+        private Admin admin;
+        public frmQLTK(string user,Admin admin)
         {
-            this.user = user;
+            this.admin = admin;
             InitializeComponent();
         }
         public void GetLoaiTK()
@@ -283,8 +283,7 @@ namespace QLTK
         }
         public string GetSoTien()
         {
-            string sotien = "";
-            sotien = txtTien.Text.Replace(",", "");
+            string sotien = txtTien.Text.Replace(",", "");
             return sotien;
         }
         public void CapNhatTK()
@@ -366,7 +365,7 @@ namespace QLTK
             LoadDSKH();
             MacDinh();
             toolStripStatusLabel2.Text = "Có " + lvTK.Items.Count.ToString() + " tài khoản";
-            this.Text = "Xin chào: " + user;
+            this.Text = "Xin chào: " + admin.User;
         }
 
         private void bảngLãiSuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -604,6 +603,12 @@ namespace QLTK
         private void logToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmLog frm = new frmLog();
+            frm.ShowDialog();
+        }
+
+        private void đổiPasswordsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoiPass frm = new frmDoiPass(admin);
             frm.ShowDialog();
         }
     }

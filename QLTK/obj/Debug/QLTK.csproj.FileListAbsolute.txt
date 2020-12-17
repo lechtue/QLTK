@@ -50,3 +50,4 @@ E:\Lập trình CSDL\DeTai\QLTK\QLTK\obj\Debug\QLTK.frmKH.resources
 E:\Lập trình CSDL\DeTai\QLTK\QLTK\obj\Debug\QLTK.frmChiTiet.resources
 E:\Lập trình CSDL\DeTai\QLTK\QLTK\obj\Debug\QLTK.frmLaiSuat.resources
 E:\Lập trình CSDL\DeTai\QLTK\QLTK\obj\Debug\QLTK.frmLog.resources
+E:\Lập trình CSDL\DeTai\QLTK\QLTK\obj\Debug\QLTK.frmDoiPass.resources

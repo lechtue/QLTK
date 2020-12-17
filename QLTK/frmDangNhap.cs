@@ -59,7 +59,7 @@ namespace QLTK
                     if (txtPassword.Text == qladmin.DanhSach[i].Password)
                     {
                         GhiLog(qladmin.DanhSach[i].User);
-                        frmQLTK frm = new frmQLTK(qladmin.DanhSach[i].User);
+                        frmQLTK frm = new frmQLTK(qladmin.DanhSach[i].User,qladmin.DanhSach[i]);
                         frm.ShowDialog();
                         this.Close();
                     }

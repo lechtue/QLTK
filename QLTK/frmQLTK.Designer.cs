@@ -31,7 +31,20 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQLTK));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đổiPasswordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.kháchHàngToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sửaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.xoáToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tàiKhoảnToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cậpNhậtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xoáToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bảngLãiSuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thoátToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +62,9 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnChiTietTK = new System.Windows.Forms.Button();
+            this.btnXoaTK = new System.Windows.Forms.Button();
+            this.btnSuaTK = new System.Windows.Forms.Button();
+            this.btnThemTK = new System.Windows.Forms.Button();
             this.lvTK = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -78,6 +94,10 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.statusStrip2 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnTimKH = new System.Windows.Forms.Button();
+            this.btnXoaKH = new System.Windows.Forms.Button();
+            this.btnSuaKH = new System.Windows.Forms.Button();
+            this.btnThemKH = new System.Windows.Forms.Button();
             this.lvKH = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -85,26 +105,6 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cbbTimKH = new System.Windows.Forms.ComboBox();
             this.txtTimKH = new System.Windows.Forms.TextBox();
-            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnTimKH = new System.Windows.Forms.Button();
-            this.btnXoaTK = new System.Windows.Forms.Button();
-            this.btnSuaTK = new System.Windows.Forms.Button();
-            this.btnThemTK = new System.Windows.Forms.Button();
-            this.btnXoaKH = new System.Windows.Forms.Button();
-            this.btnSuaKH = new System.Windows.Forms.Button();
-            this.btnThemKH = new System.Windows.Forms.Button();
-            this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiPasswordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kháchHàngToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sửaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.xoáToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tàiKhoảnToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cậpNhậtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xoáToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bảngLãiSuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thoátToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -130,6 +130,31 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // adminToolStripMenuItem
+            // 
+            this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logToolStripMenuItem,
+            this.đổiPasswordsToolStripMenuItem});
+            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.adminToolStripMenuItem.Text = "Admin";
+            // 
+            // logToolStripMenuItem
+            // 
+            this.logToolStripMenuItem.Image = global::QLTK.Properties.Resources.details_32px1;
+            this.logToolStripMenuItem.Name = "logToolStripMenuItem";
+            this.logToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.logToolStripMenuItem.Text = "Log";
+            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
+            // 
+            // đổiPasswordsToolStripMenuItem
+            // 
+            this.đổiPasswordsToolStripMenuItem.Image = global::QLTK.Properties.Resources.change_32px;
+            this.đổiPasswordsToolStripMenuItem.Name = "đổiPasswordsToolStripMenuItem";
+            this.đổiPasswordsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.đổiPasswordsToolStripMenuItem.Text = "Đổi Password";
+            this.đổiPasswordsToolStripMenuItem.Click += new System.EventHandler(this.đổiPasswordsToolStripMenuItem_Click);
+            // 
             // quảnLýToolStripMenuItem1
             // 
             this.quảnLýToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -140,6 +165,92 @@
             this.quảnLýToolStripMenuItem1.Name = "quảnLýToolStripMenuItem1";
             this.quảnLýToolStripMenuItem1.Size = new System.Drawing.Size(73, 24);
             this.quảnLýToolStripMenuItem1.Text = "Quản lý";
+            // 
+            // kháchHàngToolStripMenuItem1
+            // 
+            this.kháchHàngToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thêmToolStripMenuItem2,
+            this.sửaToolStripMenuItem2,
+            this.xoáToolStripMenuItem2});
+            this.kháchHàngToolStripMenuItem1.Image = global::QLTK.Properties.Resources.user_folder_32px;
+            this.kháchHàngToolStripMenuItem1.Name = "kháchHàngToolStripMenuItem1";
+            this.kháchHàngToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
+            this.kháchHàngToolStripMenuItem1.Text = "Khách hàng";
+            // 
+            // thêmToolStripMenuItem2
+            // 
+            this.thêmToolStripMenuItem2.Image = global::QLTK.Properties.Resources.add_new_32px;
+            this.thêmToolStripMenuItem2.Name = "thêmToolStripMenuItem2";
+            this.thêmToolStripMenuItem2.Size = new System.Drawing.Size(129, 26);
+            this.thêmToolStripMenuItem2.Text = "Thêm";
+            this.thêmToolStripMenuItem2.Click += new System.EventHandler(this.thêmToolStripMenuItem2_Click);
+            // 
+            // sửaToolStripMenuItem2
+            // 
+            this.sửaToolStripMenuItem2.Image = global::QLTK.Properties.Resources.update_user_32px;
+            this.sửaToolStripMenuItem2.Name = "sửaToolStripMenuItem2";
+            this.sửaToolStripMenuItem2.Size = new System.Drawing.Size(129, 26);
+            this.sửaToolStripMenuItem2.Text = "Sửa";
+            this.sửaToolStripMenuItem2.Click += new System.EventHandler(this.sửaToolStripMenuItem2_Click);
+            // 
+            // xoáToolStripMenuItem2
+            // 
+            this.xoáToolStripMenuItem2.Image = global::QLTK.Properties.Resources.waste_32px;
+            this.xoáToolStripMenuItem2.Name = "xoáToolStripMenuItem2";
+            this.xoáToolStripMenuItem2.Size = new System.Drawing.Size(129, 26);
+            this.xoáToolStripMenuItem2.Text = "Xoá";
+            this.xoáToolStripMenuItem2.Click += new System.EventHandler(this.xoáToolStripMenuItem2_Click);
+            // 
+            // tàiKhoảnToolStripMenuItem1
+            // 
+            this.tàiKhoảnToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thêmToolStripMenuItem3,
+            this.cậpNhậtToolStripMenuItem,
+            this.xoáToolStripMenuItem3});
+            this.tàiKhoảnToolStripMenuItem1.Image = global::QLTK.Properties.Resources.accountdark_32px;
+            this.tàiKhoảnToolStripMenuItem1.Name = "tàiKhoảnToolStripMenuItem1";
+            this.tàiKhoảnToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
+            this.tàiKhoảnToolStripMenuItem1.Text = "Tài khoản";
+            // 
+            // thêmToolStripMenuItem3
+            // 
+            this.thêmToolStripMenuItem3.Image = global::QLTK.Properties.Resources.add_new_32px;
+            this.thêmToolStripMenuItem3.Name = "thêmToolStripMenuItem3";
+            this.thêmToolStripMenuItem3.Size = new System.Drawing.Size(151, 26);
+            this.thêmToolStripMenuItem3.Text = "Tạo";
+            this.thêmToolStripMenuItem3.Click += new System.EventHandler(this.thêmToolStripMenuItem3_Click);
+            // 
+            // cậpNhậtToolStripMenuItem
+            // 
+            this.cậpNhậtToolStripMenuItem.Image = global::QLTK.Properties.Resources.update_32px;
+            this.cậpNhậtToolStripMenuItem.Name = "cậpNhậtToolStripMenuItem";
+            this.cậpNhậtToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.cậpNhậtToolStripMenuItem.Text = "Cập nhật";
+            this.cậpNhậtToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtToolStripMenuItem_Click);
+            // 
+            // xoáToolStripMenuItem3
+            // 
+            this.xoáToolStripMenuItem3.Image = global::QLTK.Properties.Resources.waste_32px;
+            this.xoáToolStripMenuItem3.Name = "xoáToolStripMenuItem3";
+            this.xoáToolStripMenuItem3.Size = new System.Drawing.Size(151, 26);
+            this.xoáToolStripMenuItem3.Text = "Xoá";
+            this.xoáToolStripMenuItem3.Click += new System.EventHandler(this.xoáToolStripMenuItem3_Click);
+            // 
+            // bảngLãiSuấtToolStripMenuItem
+            // 
+            this.bảngLãiSuấtToolStripMenuItem.Image = global::QLTK.Properties.Resources.percentage_32px;
+            this.bảngLãiSuấtToolStripMenuItem.Name = "bảngLãiSuấtToolStripMenuItem";
+            this.bảngLãiSuấtToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.bảngLãiSuấtToolStripMenuItem.Text = "Bảng lãi suất";
+            this.bảngLãiSuấtToolStripMenuItem.Click += new System.EventHandler(this.bảngLãiSuấtToolStripMenuItem_Click);
+            // 
+            // thoátToolStripMenuItem1
+            // 
+            this.thoátToolStripMenuItem1.Image = global::QLTK.Properties.Resources.delete_32px;
+            this.thoátToolStripMenuItem1.Name = "thoátToolStripMenuItem1";
+            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
+            this.thoátToolStripMenuItem1.Text = "Thoát";
+            this.thoátToolStripMenuItem1.Click += new System.EventHandler(this.thoátToolStripMenuItem1_Click);
             // 
             // quảnLýToolStripMenuItem
             // 
@@ -279,6 +390,45 @@
             this.btnChiTietTK.Text = "Chi tiết";
             this.btnChiTietTK.UseVisualStyleBackColor = true;
             this.btnChiTietTK.Click += new System.EventHandler(this.btnChiTietTK_Click);
+            // 
+            // btnXoaTK
+            // 
+            this.btnXoaTK.BackColor = System.Drawing.Color.White;
+            this.btnXoaTK.BackgroundImage = global::QLTK.Properties.Resources.waste_32px;
+            this.btnXoaTK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnXoaTK.Enabled = false;
+            this.btnXoaTK.Location = new System.Drawing.Point(578, 16);
+            this.btnXoaTK.Name = "btnXoaTK";
+            this.btnXoaTK.Size = new System.Drawing.Size(40, 40);
+            this.btnXoaTK.TabIndex = 8;
+            this.btnXoaTK.UseVisualStyleBackColor = false;
+            this.btnXoaTK.Click += new System.EventHandler(this.btnXoaTK_Click);
+            // 
+            // btnSuaTK
+            // 
+            this.btnSuaTK.BackColor = System.Drawing.Color.White;
+            this.btnSuaTK.BackgroundImage = global::QLTK.Properties.Resources.update_32px;
+            this.btnSuaTK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSuaTK.Enabled = false;
+            this.btnSuaTK.Location = new System.Drawing.Point(518, 16);
+            this.btnSuaTK.Name = "btnSuaTK";
+            this.btnSuaTK.Size = new System.Drawing.Size(40, 40);
+            this.btnSuaTK.TabIndex = 7;
+            this.btnSuaTK.UseVisualStyleBackColor = false;
+            this.btnSuaTK.Click += new System.EventHandler(this.btnSuaTK_Click);
+            // 
+            // btnThemTK
+            // 
+            this.btnThemTK.BackColor = System.Drawing.Color.White;
+            this.btnThemTK.BackgroundImage = global::QLTK.Properties.Resources.add_new_32px;
+            this.btnThemTK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThemTK.Enabled = false;
+            this.btnThemTK.Location = new System.Drawing.Point(458, 16);
+            this.btnThemTK.Name = "btnThemTK";
+            this.btnThemTK.Size = new System.Drawing.Size(40, 40);
+            this.btnThemTK.TabIndex = 6;
+            this.btnThemTK.UseVisualStyleBackColor = false;
+            this.btnThemTK.Click += new System.EventHandler(this.btnThemTK_Click);
             // 
             // lvTK
             // 
@@ -569,6 +719,57 @@
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(151, 20);
             this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
             // 
+            // btnTimKH
+            // 
+            this.btnTimKH.BackColor = System.Drawing.Color.White;
+            this.btnTimKH.BackgroundImage = global::QLTK.Properties.Resources.search_32px;
+            this.btnTimKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTimKH.Enabled = false;
+            this.btnTimKH.Location = new System.Drawing.Point(267, 20);
+            this.btnTimKH.Name = "btnTimKH";
+            this.btnTimKH.Size = new System.Drawing.Size(30, 30);
+            this.btnTimKH.TabIndex = 6;
+            this.btnTimKH.UseVisualStyleBackColor = false;
+            this.btnTimKH.Click += new System.EventHandler(this.btnTimKH_Click);
+            // 
+            // btnXoaKH
+            // 
+            this.btnXoaKH.BackColor = System.Drawing.Color.White;
+            this.btnXoaKH.BackgroundImage = global::QLTK.Properties.Resources.waste_32px;
+            this.btnXoaKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnXoaKH.Enabled = false;
+            this.btnXoaKH.Location = new System.Drawing.Point(581, 571);
+            this.btnXoaKH.Name = "btnXoaKH";
+            this.btnXoaKH.Size = new System.Drawing.Size(40, 40);
+            this.btnXoaKH.TabIndex = 5;
+            this.btnXoaKH.UseVisualStyleBackColor = false;
+            this.btnXoaKH.Click += new System.EventHandler(this.btnXoaKH_Click);
+            // 
+            // btnSuaKH
+            // 
+            this.btnSuaKH.BackColor = System.Drawing.Color.White;
+            this.btnSuaKH.BackgroundImage = global::QLTK.Properties.Resources.update_user_32px;
+            this.btnSuaKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSuaKH.Enabled = false;
+            this.btnSuaKH.Location = new System.Drawing.Point(581, 525);
+            this.btnSuaKH.Name = "btnSuaKH";
+            this.btnSuaKH.Size = new System.Drawing.Size(40, 40);
+            this.btnSuaKH.TabIndex = 4;
+            this.btnSuaKH.UseVisualStyleBackColor = false;
+            this.btnSuaKH.Click += new System.EventHandler(this.btnSuaKH_Click);
+            // 
+            // btnThemKH
+            // 
+            this.btnThemKH.BackColor = System.Drawing.Color.White;
+            this.btnThemKH.BackgroundImage = global::QLTK.Properties.Resources.add_new_32px;
+            this.btnThemKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThemKH.Location = new System.Drawing.Point(581, 479);
+            this.btnThemKH.Name = "btnThemKH";
+            this.btnThemKH.Size = new System.Drawing.Size(40, 40);
+            this.btnThemKH.TabIndex = 3;
+            this.btnThemKH.UseVisualStyleBackColor = false;
+            this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
+            // 
             // lvKH
             // 
             this.lvKH.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -633,206 +834,6 @@
             this.txtTimKH.Size = new System.Drawing.Size(154, 28);
             this.txtTimKH.TabIndex = 0;
             // 
-            // adminToolStripMenuItem
-            // 
-            this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logToolStripMenuItem,
-            this.đổiPasswordsToolStripMenuItem});
-            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
-            this.adminToolStripMenuItem.Text = "Admin";
-            // 
-            // btnTimKH
-            // 
-            this.btnTimKH.BackColor = System.Drawing.Color.White;
-            this.btnTimKH.BackgroundImage = global::QLTK.Properties.Resources.search_32px;
-            this.btnTimKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTimKH.Enabled = false;
-            this.btnTimKH.Location = new System.Drawing.Point(267, 20);
-            this.btnTimKH.Name = "btnTimKH";
-            this.btnTimKH.Size = new System.Drawing.Size(30, 30);
-            this.btnTimKH.TabIndex = 6;
-            this.btnTimKH.UseVisualStyleBackColor = false;
-            this.btnTimKH.Click += new System.EventHandler(this.btnTimKH_Click);
-            // 
-            // btnXoaTK
-            // 
-            this.btnXoaTK.BackColor = System.Drawing.Color.White;
-            this.btnXoaTK.BackgroundImage = global::QLTK.Properties.Resources.waste_32px;
-            this.btnXoaTK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnXoaTK.Enabled = false;
-            this.btnXoaTK.Location = new System.Drawing.Point(578, 16);
-            this.btnXoaTK.Name = "btnXoaTK";
-            this.btnXoaTK.Size = new System.Drawing.Size(40, 40);
-            this.btnXoaTK.TabIndex = 8;
-            this.btnXoaTK.UseVisualStyleBackColor = false;
-            this.btnXoaTK.Click += new System.EventHandler(this.btnXoaTK_Click);
-            // 
-            // btnSuaTK
-            // 
-            this.btnSuaTK.BackColor = System.Drawing.Color.White;
-            this.btnSuaTK.BackgroundImage = global::QLTK.Properties.Resources.update_32px;
-            this.btnSuaTK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSuaTK.Enabled = false;
-            this.btnSuaTK.Location = new System.Drawing.Point(518, 16);
-            this.btnSuaTK.Name = "btnSuaTK";
-            this.btnSuaTK.Size = new System.Drawing.Size(40, 40);
-            this.btnSuaTK.TabIndex = 7;
-            this.btnSuaTK.UseVisualStyleBackColor = false;
-            this.btnSuaTK.Click += new System.EventHandler(this.btnSuaTK_Click);
-            // 
-            // btnThemTK
-            // 
-            this.btnThemTK.BackColor = System.Drawing.Color.White;
-            this.btnThemTK.BackgroundImage = global::QLTK.Properties.Resources.add_new_32px;
-            this.btnThemTK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThemTK.Enabled = false;
-            this.btnThemTK.Location = new System.Drawing.Point(458, 16);
-            this.btnThemTK.Name = "btnThemTK";
-            this.btnThemTK.Size = new System.Drawing.Size(40, 40);
-            this.btnThemTK.TabIndex = 6;
-            this.btnThemTK.UseVisualStyleBackColor = false;
-            this.btnThemTK.Click += new System.EventHandler(this.btnThemTK_Click);
-            // 
-            // btnXoaKH
-            // 
-            this.btnXoaKH.BackColor = System.Drawing.Color.White;
-            this.btnXoaKH.BackgroundImage = global::QLTK.Properties.Resources.waste_32px;
-            this.btnXoaKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnXoaKH.Enabled = false;
-            this.btnXoaKH.Location = new System.Drawing.Point(581, 571);
-            this.btnXoaKH.Name = "btnXoaKH";
-            this.btnXoaKH.Size = new System.Drawing.Size(40, 40);
-            this.btnXoaKH.TabIndex = 5;
-            this.btnXoaKH.UseVisualStyleBackColor = false;
-            this.btnXoaKH.Click += new System.EventHandler(this.btnXoaKH_Click);
-            // 
-            // btnSuaKH
-            // 
-            this.btnSuaKH.BackColor = System.Drawing.Color.White;
-            this.btnSuaKH.BackgroundImage = global::QLTK.Properties.Resources.update_user_32px;
-            this.btnSuaKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSuaKH.Enabled = false;
-            this.btnSuaKH.Location = new System.Drawing.Point(581, 525);
-            this.btnSuaKH.Name = "btnSuaKH";
-            this.btnSuaKH.Size = new System.Drawing.Size(40, 40);
-            this.btnSuaKH.TabIndex = 4;
-            this.btnSuaKH.UseVisualStyleBackColor = false;
-            this.btnSuaKH.Click += new System.EventHandler(this.btnSuaKH_Click);
-            // 
-            // btnThemKH
-            // 
-            this.btnThemKH.BackColor = System.Drawing.Color.White;
-            this.btnThemKH.BackgroundImage = global::QLTK.Properties.Resources.add_new_32px;
-            this.btnThemKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThemKH.Location = new System.Drawing.Point(581, 479);
-            this.btnThemKH.Name = "btnThemKH";
-            this.btnThemKH.Size = new System.Drawing.Size(40, 40);
-            this.btnThemKH.TabIndex = 3;
-            this.btnThemKH.UseVisualStyleBackColor = false;
-            this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
-            // 
-            // logToolStripMenuItem
-            // 
-            this.logToolStripMenuItem.Image = global::QLTK.Properties.Resources.details_32px1;
-            this.logToolStripMenuItem.Name = "logToolStripMenuItem";
-            this.logToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.logToolStripMenuItem.Text = "Log";
-            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
-            // 
-            // đổiPasswordsToolStripMenuItem
-            // 
-            this.đổiPasswordsToolStripMenuItem.Image = global::QLTK.Properties.Resources.change_32px;
-            this.đổiPasswordsToolStripMenuItem.Name = "đổiPasswordsToolStripMenuItem";
-            this.đổiPasswordsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.đổiPasswordsToolStripMenuItem.Text = "Đổi Password";
-            // 
-            // kháchHàngToolStripMenuItem1
-            // 
-            this.kháchHàngToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thêmToolStripMenuItem2,
-            this.sửaToolStripMenuItem2,
-            this.xoáToolStripMenuItem2});
-            this.kháchHàngToolStripMenuItem1.Image = global::QLTK.Properties.Resources.user_folder_32px;
-            this.kháchHàngToolStripMenuItem1.Name = "kháchHàngToolStripMenuItem1";
-            this.kháchHàngToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
-            this.kháchHàngToolStripMenuItem1.Text = "Khách hàng";
-            // 
-            // thêmToolStripMenuItem2
-            // 
-            this.thêmToolStripMenuItem2.Image = global::QLTK.Properties.Resources.add_new_32px;
-            this.thêmToolStripMenuItem2.Name = "thêmToolStripMenuItem2";
-            this.thêmToolStripMenuItem2.Size = new System.Drawing.Size(129, 26);
-            this.thêmToolStripMenuItem2.Text = "Thêm";
-            this.thêmToolStripMenuItem2.Click += new System.EventHandler(this.thêmToolStripMenuItem2_Click);
-            // 
-            // sửaToolStripMenuItem2
-            // 
-            this.sửaToolStripMenuItem2.Image = global::QLTK.Properties.Resources.update_user_32px;
-            this.sửaToolStripMenuItem2.Name = "sửaToolStripMenuItem2";
-            this.sửaToolStripMenuItem2.Size = new System.Drawing.Size(129, 26);
-            this.sửaToolStripMenuItem2.Text = "Sửa";
-            this.sửaToolStripMenuItem2.Click += new System.EventHandler(this.sửaToolStripMenuItem2_Click);
-            // 
-            // xoáToolStripMenuItem2
-            // 
-            this.xoáToolStripMenuItem2.Image = global::QLTK.Properties.Resources.waste_32px;
-            this.xoáToolStripMenuItem2.Name = "xoáToolStripMenuItem2";
-            this.xoáToolStripMenuItem2.Size = new System.Drawing.Size(129, 26);
-            this.xoáToolStripMenuItem2.Text = "Xoá";
-            this.xoáToolStripMenuItem2.Click += new System.EventHandler(this.xoáToolStripMenuItem2_Click);
-            // 
-            // tàiKhoảnToolStripMenuItem1
-            // 
-            this.tàiKhoảnToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thêmToolStripMenuItem3,
-            this.cậpNhậtToolStripMenuItem,
-            this.xoáToolStripMenuItem3});
-            this.tàiKhoảnToolStripMenuItem1.Image = global::QLTK.Properties.Resources.accountdark_32px;
-            this.tàiKhoảnToolStripMenuItem1.Name = "tàiKhoảnToolStripMenuItem1";
-            this.tàiKhoảnToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
-            this.tàiKhoảnToolStripMenuItem1.Text = "Tài khoản";
-            // 
-            // thêmToolStripMenuItem3
-            // 
-            this.thêmToolStripMenuItem3.Image = global::QLTK.Properties.Resources.add_new_32px;
-            this.thêmToolStripMenuItem3.Name = "thêmToolStripMenuItem3";
-            this.thêmToolStripMenuItem3.Size = new System.Drawing.Size(151, 26);
-            this.thêmToolStripMenuItem3.Text = "Tạo";
-            this.thêmToolStripMenuItem3.Click += new System.EventHandler(this.thêmToolStripMenuItem3_Click);
-            // 
-            // cậpNhậtToolStripMenuItem
-            // 
-            this.cậpNhậtToolStripMenuItem.Image = global::QLTK.Properties.Resources.update_32px;
-            this.cậpNhậtToolStripMenuItem.Name = "cậpNhậtToolStripMenuItem";
-            this.cậpNhậtToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
-            this.cậpNhậtToolStripMenuItem.Text = "Cập nhật";
-            this.cậpNhậtToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtToolStripMenuItem_Click);
-            // 
-            // xoáToolStripMenuItem3
-            // 
-            this.xoáToolStripMenuItem3.Image = global::QLTK.Properties.Resources.waste_32px;
-            this.xoáToolStripMenuItem3.Name = "xoáToolStripMenuItem3";
-            this.xoáToolStripMenuItem3.Size = new System.Drawing.Size(151, 26);
-            this.xoáToolStripMenuItem3.Text = "Xoá";
-            this.xoáToolStripMenuItem3.Click += new System.EventHandler(this.xoáToolStripMenuItem3_Click);
-            // 
-            // bảngLãiSuấtToolStripMenuItem
-            // 
-            this.bảngLãiSuấtToolStripMenuItem.Image = global::QLTK.Properties.Resources.percentage_32px;
-            this.bảngLãiSuấtToolStripMenuItem.Name = "bảngLãiSuấtToolStripMenuItem";
-            this.bảngLãiSuấtToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
-            this.bảngLãiSuấtToolStripMenuItem.Text = "Bảng lãi suất";
-            this.bảngLãiSuấtToolStripMenuItem.Click += new System.EventHandler(this.bảngLãiSuấtToolStripMenuItem_Click);
-            // 
-            // thoátToolStripMenuItem1
-            // 
-            this.thoátToolStripMenuItem1.Image = global::QLTK.Properties.Resources.delete_32px;
-            this.thoátToolStripMenuItem1.Name = "thoátToolStripMenuItem1";
-            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
-            this.thoátToolStripMenuItem1.Text = "Thoát";
-            this.thoátToolStripMenuItem1.Click += new System.EventHandler(this.thoátToolStripMenuItem1_Click);
-            // 
             // frmQLTK
             // 
             this.AcceptButton = this.btnTimKH;
@@ -848,6 +849,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "frmQLTK";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QLTK";

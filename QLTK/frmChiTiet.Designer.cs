@@ -58,7 +58,7 @@
             this.label1.Location = new System.Drawing.Point(340, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 20);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 9;
             this.label1.Text = "Số tiền";
             // 
             // label2
@@ -68,7 +68,7 @@
             this.label2.Location = new System.Drawing.Point(15, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 20);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 13;
             this.label2.Text = "Kỳ hạn";
             // 
             // label3
@@ -78,7 +78,7 @@
             this.label3.Location = new System.Drawing.Point(15, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 20);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 11;
             this.label3.Text = "Lãi suất";
             // 
             // label4
@@ -88,7 +88,7 @@
             this.label4.Location = new System.Drawing.Point(15, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 20);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 15;
             this.label4.Text = "Số dư Nợ/Lãi";
             // 
             // txtSoTien
@@ -98,7 +98,7 @@
             this.txtSoTien.Name = "txtSoTien";
             this.txtSoTien.ReadOnly = true;
             this.txtSoTien.Size = new System.Drawing.Size(131, 28);
-            this.txtSoTien.TabIndex = 4;
+            this.txtSoTien.TabIndex = 1;
             // 
             // txtLaiSuat
             // 
@@ -107,7 +107,7 @@
             this.txtLaiSuat.Name = "txtLaiSuat";
             this.txtLaiSuat.ReadOnly = true;
             this.txtLaiSuat.Size = new System.Drawing.Size(131, 28);
-            this.txtLaiSuat.TabIndex = 5;
+            this.txtLaiSuat.TabIndex = 2;
             // 
             // txtKyHan
             // 
@@ -116,7 +116,7 @@
             this.txtKyHan.Name = "txtKyHan";
             this.txtKyHan.ReadOnly = true;
             this.txtKyHan.Size = new System.Drawing.Size(156, 28);
-            this.txtKyHan.TabIndex = 6;
+            this.txtKyHan.TabIndex = 4;
             // 
             // txtNoLai
             // 
@@ -125,7 +125,7 @@
             this.txtNoLai.Name = "txtNoLai";
             this.txtNoLai.ReadOnly = true;
             this.txtNoLai.Size = new System.Drawing.Size(131, 28);
-            this.txtNoLai.TabIndex = 7;
+            this.txtNoLai.TabIndex = 6;
             // 
             // btnExit
             // 
@@ -133,7 +133,7 @@
             this.btnExit.Location = new System.Drawing.Point(281, 191);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 30);
-            this.btnExit.TabIndex = 8;
+            this.btnExit.TabIndex = 17;
             this.btnExit.Text = "Đóng";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -144,7 +144,7 @@
             this.label5.Location = new System.Drawing.Point(602, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(19, 20);
-            this.label5.TabIndex = 9;
+            this.label5.TabIndex = 10;
             this.label5.Text = "đ";
             // 
             // label6
@@ -153,7 +153,7 @@
             this.label6.Location = new System.Drawing.Point(277, 55);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(21, 20);
-            this.label6.TabIndex = 10;
+            this.label6.TabIndex = 12;
             this.label6.Text = "%";
             // 
             // label7
@@ -172,7 +172,7 @@
             this.label8.Location = new System.Drawing.Point(15, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(105, 20);
-            this.label8.TabIndex = 12;
+            this.label8.TabIndex = 8;
             this.label8.Text = "Số tài khoản";
             // 
             // label9
@@ -202,7 +202,7 @@
             this.label11.Location = new System.Drawing.Point(340, 145);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(116, 20);
-            this.label11.TabIndex = 15;
+            this.label11.TabIndex = 16;
             this.label11.Text = "Ngày đáo hạn";
             // 
             // txtSoTK
@@ -212,7 +212,7 @@
             this.txtSoTK.Name = "txtSoTK";
             this.txtSoTK.ReadOnly = true;
             this.txtSoTK.Size = new System.Drawing.Size(156, 28);
-            this.txtSoTK.TabIndex = 16;
+            this.txtSoTK.TabIndex = 0;
             // 
             // txtLoaiTK
             // 
@@ -221,7 +221,7 @@
             this.txtLoaiTK.Name = "txtLoaiTK";
             this.txtLoaiTK.ReadOnly = true;
             this.txtLoaiTK.Size = new System.Drawing.Size(157, 28);
-            this.txtLoaiTK.TabIndex = 17;
+            this.txtLoaiTK.TabIndex = 3;
             // 
             // txtNgayBatDau
             // 
@@ -229,7 +229,7 @@
             this.txtNgayBatDau.Name = "txtNgayBatDau";
             this.txtNgayBatDau.ReadOnly = true;
             this.txtNgayBatDau.Size = new System.Drawing.Size(156, 28);
-            this.txtNgayBatDau.TabIndex = 18;
+            this.txtNgayBatDau.TabIndex = 5;
             // 
             // txtNgayKetThuc
             // 
@@ -238,7 +238,7 @@
             this.txtNgayKetThuc.Name = "txtNgayKetThuc";
             this.txtNgayKetThuc.ReadOnly = true;
             this.txtNgayKetThuc.Size = new System.Drawing.Size(157, 28);
-            this.txtNgayKetThuc.TabIndex = 19;
+            this.txtNgayKetThuc.TabIndex = 7;
             // 
             // frmChiTiet
             // 
@@ -270,9 +270,12 @@
             this.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(655, 280);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(655, 280);
             this.Name = "frmChiTiet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chi tiết tài khoản";
             this.Load += new System.EventHandler(this.frmChiTiet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -180,6 +180,7 @@
             this.lvLoaiTK.TabIndex = 4;
             this.lvLoaiTK.UseCompatibleStateImageBehavior = false;
             this.lvLoaiTK.View = System.Windows.Forms.View.Details;
+            this.lvLoaiTK.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.lvLoaiTK_ColumnClick);
             this.lvLoaiTK.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lvLoaiTK_ItemSelectionChanged);
             // 
             // columnHeader1
@@ -242,6 +243,9 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(452, 387);
+            this.MinimumSize = new System.Drawing.Size(452, 387);
             this.Name = "frmLaiSuat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bảng lãi suất";

@@ -47,7 +47,7 @@ namespace QLTK
             {
                 ListViewItem item = new ListViewItem(List.List[i].STT.ToString());
                 item.SubItems.Add(List.List[i].User.ToString());
-                item.SubItems.Add(List.List[i].TimeLog.ToString());
+                item.SubItems.Add(List.List[i].TimeLog.ToString("dd/MM/yyyy hh:mm:ss tt"));
                 lvLog.Items.Add(item);
             }
         }
