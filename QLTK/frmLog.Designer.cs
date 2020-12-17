@@ -68,12 +68,13 @@ namespace QLTK
             // columnHeader2
             // 
             this.columnHeader2.Text = "Time Log";
-            this.columnHeader2.Width = 351;
+            this.columnHeader2.Width = 337;
             // 
             // frmLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(625, 425);
             this.Controls.Add(this.lvLog);
             this.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

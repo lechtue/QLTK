@@ -143,7 +143,7 @@ namespace QLTK
         {
             lvKH.Items.Clear();
             GetLVKH();
-            toolStripStatusLabel3.Text = "Có " + lvKH.Items.Count.ToString() + " khách hàng";
+            lblSoKH.Text = "Có " + lvKH.Items.Count.ToString() + " khách hàng";
         }
         public void LoadDSTK()
         {
@@ -364,8 +364,8 @@ namespace QLTK
             GetKhachHang();
             LoadDSKH();
             MacDinh();
-            toolStripStatusLabel2.Text = "Có " + lvTK.Items.Count.ToString() + " tài khoản";
-            this.Text = "Xin chào: " + admin.User;
+            lblSoTK.Text = "Có " + lvTK.Items.Count.ToString() + " tài khoản";
+            lblUser.Text = "Xin chào: " + admin.User;
         }
 
         private void bảngLãiSuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -421,7 +421,9 @@ namespace QLTK
         {
             if (txtTien.Text != "")
             {
-                txtTien.Text = string.Format("{0:#,###}", double.Parse(txtTien.Text));
+                var num = decimal.Parse(txtTien.Text.Replace(".", ""),NumberStyles.AllowThousands);
+                txtTien.Text = String.Format("{0:N0}", num);
+                txtTien.Select(txtTien.Text.Length, 0);
             }
         }
 
@@ -465,7 +467,7 @@ namespace QLTK
                 MacDinh();
                 lvTK.Items.Clear();
             }
-            toolStripStatusLabel2.Text = "Có " + lvTK.Items.Count.ToString() + " tài khoản";
+            lblSoTK.Text = "Có " + lvTK.Items.Count.ToString() + " tài khoản";
         }
 
         private void btnSuaKH_Click(object sender, EventArgs e)

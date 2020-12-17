@@ -59,7 +59,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblSoTK = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnChiTietTK = new System.Windows.Forms.Button();
             this.btnXoaTK = new System.Windows.Forms.Button();
@@ -93,7 +93,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.statusStrip2 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblSoKH = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnTimKH = new System.Windows.Forms.Button();
             this.btnXoaKH = new System.Windows.Forms.Button();
             this.btnSuaKH = new System.Windows.Forms.Button();
@@ -105,6 +105,7 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cbbTimKH = new System.Windows.Forms.ComboBox();
             this.txtTimKH = new System.Windows.Forms.TextBox();
+            this.lblUser = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -120,13 +121,14 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem,
             this.quảnLýToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1262, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1262, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -136,7 +138,7 @@
             this.logToolStripMenuItem,
             this.đổiPasswordsToolStripMenuItem});
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
             this.adminToolStripMenuItem.Text = "Admin";
             // 
             // logToolStripMenuItem
@@ -163,7 +165,7 @@
             this.bảngLãiSuấtToolStripMenuItem,
             this.thoátToolStripMenuItem1});
             this.quảnLýToolStripMenuItem1.Name = "quảnLýToolStripMenuItem1";
-            this.quảnLýToolStripMenuItem1.Size = new System.Drawing.Size(73, 24);
+            this.quảnLýToolStripMenuItem1.Size = new System.Drawing.Size(73, 26);
             this.quảnLýToolStripMenuItem1.Text = "Quản lý";
             // 
             // kháchHàngToolStripMenuItem1
@@ -174,7 +176,7 @@
             this.xoáToolStripMenuItem2});
             this.kháchHàngToolStripMenuItem1.Image = global::QLTK.Properties.Resources.user_folder_32px;
             this.kháchHàngToolStripMenuItem1.Name = "kháchHàngToolStripMenuItem1";
-            this.kháchHàngToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
+            this.kháchHàngToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.kháchHàngToolStripMenuItem1.Text = "Khách hàng";
             // 
             // thêmToolStripMenuItem2
@@ -209,7 +211,7 @@
             this.xoáToolStripMenuItem3});
             this.tàiKhoảnToolStripMenuItem1.Image = global::QLTK.Properties.Resources.accountdark_32px;
             this.tàiKhoảnToolStripMenuItem1.Name = "tàiKhoảnToolStripMenuItem1";
-            this.tàiKhoảnToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
+            this.tàiKhoảnToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.tàiKhoảnToolStripMenuItem1.Text = "Tài khoản";
             // 
             // thêmToolStripMenuItem3
@@ -240,7 +242,7 @@
             // 
             this.bảngLãiSuấtToolStripMenuItem.Image = global::QLTK.Properties.Resources.percentage_32px;
             this.bảngLãiSuấtToolStripMenuItem.Name = "bảngLãiSuấtToolStripMenuItem";
-            this.bảngLãiSuấtToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.bảngLãiSuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.bảngLãiSuấtToolStripMenuItem.Text = "Bảng lãi suất";
             this.bảngLãiSuấtToolStripMenuItem.Click += new System.EventHandler(this.bảngLãiSuấtToolStripMenuItem_Click);
             // 
@@ -248,7 +250,7 @@
             // 
             this.thoátToolStripMenuItem1.Image = global::QLTK.Properties.Resources.delete_32px;
             this.thoátToolStripMenuItem1.Name = "thoátToolStripMenuItem1";
-            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(177, 26);
+            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.thoátToolStripMenuItem1.Text = "Thoát";
             this.thoátToolStripMenuItem1.Click += new System.EventHandler(this.thoátToolStripMenuItem1_Click);
             // 
@@ -332,7 +334,7 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 30);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -344,7 +346,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox3);
-            this.splitContainer1.Size = new System.Drawing.Size(1262, 645);
+            this.splitContainer1.Size = new System.Drawing.Size(1262, 643);
             this.splitContainer1.SplitterDistance = 631;
             this.splitContainer1.TabIndex = 2;
             // 
@@ -352,18 +354,18 @@
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 619);
+            this.lblSoTK});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 617);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(631, 26);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel2
+            // lblSoTK
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(151, 20);
-            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            this.lblSoTK.Name = "lblSoTK";
+            this.lblSoTK.Size = new System.Drawing.Size(151, 20);
+            this.lblSoTK.Text = "toolStripStatusLabel2";
             // 
             // groupBox2
             // 
@@ -520,12 +522,13 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bàngLãiSuấtToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(164, 28);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(168, 30);
             // 
             // bàngLãiSuấtToolStripMenuItem
             // 
+            this.bàngLãiSuấtToolStripMenuItem.Image = global::QLTK.Properties.Resources.percentage_32px;
             this.bàngLãiSuấtToolStripMenuItem.Name = "bàngLãiSuấtToolStripMenuItem";
-            this.bàngLãiSuấtToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
+            this.bàngLãiSuấtToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
             this.bàngLãiSuấtToolStripMenuItem.Text = "Bàng lãi suất";
             this.bàngLãiSuấtToolStripMenuItem.Click += new System.EventHandler(this.bàngLãiSuấtToolStripMenuItem_Click);
             // 
@@ -697,7 +700,7 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(627, 645);
+            this.groupBox3.Size = new System.Drawing.Size(627, 643);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Khách hàng";
@@ -706,18 +709,18 @@
             // 
             this.statusStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel3});
-            this.statusStrip2.Location = new System.Drawing.Point(3, 616);
+            this.lblSoKH});
+            this.statusStrip2.Location = new System.Drawing.Point(3, 614);
             this.statusStrip2.Name = "statusStrip2";
             this.statusStrip2.Size = new System.Drawing.Size(621, 26);
             this.statusStrip2.TabIndex = 7;
             this.statusStrip2.Text = "statusStrip2";
             // 
-            // toolStripStatusLabel3
+            // lblSoKH
             // 
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(151, 20);
-            this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
+            this.lblSoKH.Name = "lblSoKH";
+            this.lblSoKH.Size = new System.Drawing.Size(151, 20);
+            this.lblSoKH.Text = "toolStripStatusLabel3";
             // 
             // btnTimKH
             // 
@@ -834,6 +837,17 @@
             this.txtTimKH.Size = new System.Drawing.Size(154, 28);
             this.txtTimKH.TabIndex = 0;
             // 
+            // lblUser
+            // 
+            this.lblUser.BackColor = System.Drawing.SystemColors.Control;
+            this.lblUser.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(913, 5);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(342, 17);
+            this.lblUser.TabIndex = 3;
+            this.lblUser.Text = "label10";
+            this.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // frmQLTK
             // 
             this.AcceptButton = this.btnTimKH;
@@ -841,6 +855,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -943,9 +958,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtLaiSuat;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel lblSoTK;
         private System.Windows.Forms.StatusStrip statusStrip2;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel lblSoKH;
         private System.Windows.Forms.Button btnChiTietTK;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
@@ -953,5 +968,6 @@
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đổiPasswordsToolStripMenuItem;
+        private System.Windows.Forms.Label lblUser;
     }
 }
